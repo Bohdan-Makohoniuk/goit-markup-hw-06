@@ -70,7 +70,35 @@
                 <use href="./images/sprite.svg#modal-icon"></use>
               </svg>
             </button>
-            <!-- <form class="modal-form" action=""></form> -->
+            <form class="modal-form" action="">
+              <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+              <label for="form">
+                <span class="form-title">Имя</span>
+                <input class="user-form" type="text" name="user-name" autofocus required />
+              </label>
+              <label for="">
+                <span class="form-title">Телефон</span>
+                <input class="user-form" type="tel" name="user-phone" required />
+              </label>
+              <label for="">
+                <span class="form-title">Почта</span>
+                <input class="user-form" type="email" name="user-mail" required />
+              </label>
+              <label for="user-message">
+                <span class="form-title">Комментарий</span>
+                <textarea
+                  class="form-message"
+                  name="user-message"
+                  rows="5"
+                  placeholder="Введите текст"
+                ></textarea>
+              </label>
+              <label class="form-checked">
+                <input type="radio" name="" checked />
+                Соглашаюсь с рассылкой и принимаю <a class="form-link" href="">Условия договора</a>
+              </label>
+              <button class="submit-form" type="submit">Отправить</button>
+            </form>
           </div>
         </div>
       </section>
