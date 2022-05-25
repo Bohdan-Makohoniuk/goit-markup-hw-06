@@ -345,6 +345,64 @@ button {
   transform: translate(-50%, -50%) scale(1);
 }
 
+/*-------------------------------------- FORM------------------------- */
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.user-form {
+  width: 450px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.form-message {
+  display: block;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  width: 450px;
+  height: 120px;
+
+  text-align: left;
+  resize: none;
+
+  margin-bottom: 20px;
+  padding: 12px 16px;
+}
+
+.form-title {
+  display: block;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  text-align: left;
+
+  margin-bottom: 4px;
+}
+
+.modal-title {
+  font-weight: 700px;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--title-text-calor);
+
+  margin-bottom: 12px;
+}
+
+.form-checked {
+  margin-bottom: 30px;
+}
+
+.form-link {
+  color: var(--accent-color);
+}
+
 /* ---------------------------------saction "особенности"------------------------ */
 
 .section-partners {
@@ -662,6 +720,50 @@ address {
 }
 .socials:not(:last-child) {
   margin-right: 10px;
+}
+
+/* ---------------------------Підписатись--------------------------------- */
+.user-mail {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 90px;
+}
+
+.email {
+  width: 360px;
+  height: 50px;
+}
+
+.submit {
+  font-family: inherit;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  border: none;
+  margin: 0px;
+  width: 200px;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+
+  margin-left: 12px;
+}
+
+.mail {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 /* ---------------------------------------------------------------------- */
