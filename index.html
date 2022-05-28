@@ -72,17 +72,26 @@
             </button>
             <form class="modal-form" action="">
               <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
-              <label for="form">
+              <label class="form-groop">
                 <span class="form-title">Имя</span>
                 <input class="user-form" type="text" name="user-name" autofocus required />
+                <svg class="form-icon" width="18" height="18">
+                  <use href="./images/sprite.svg#person-form"></use>
+                </svg>
               </label>
-              <label for="">
+              <label class="form-groop">
                 <span class="form-title">Телефон</span>
                 <input class="user-form" type="tel" name="user-phone" required />
+                <svg class="form-icon" width="18" height="18">
+                  <use href="./images/sprite.svg#phone-form"></use>
+                </svg>
               </label>
-              <label for="">
+              <label class="form-groop">
                 <span class="form-title">Почта</span>
                 <input class="user-form" type="email" name="user-mail" required />
+                <svg class="form-icon" width="18" height="18">
+                  <use href="./images/sprite.svg#email-form"></use>
+                </svg>
               </label>
               <label for="user-message">
                 <span class="form-title">Комментарий</span>
@@ -94,7 +103,10 @@
                 ></textarea>
               </label>
               <label class="form-checked">
-                <input type="radio" name="" checked />
+                <input class="checkbox" type="checkbox" name="" checked />
+                <svg class="custom-checkbox-icon" width="11" height="8">
+                  <use href="./images/sprite.svg#check-box"></use>
+                </svg>
                 Соглашаюсь с рассылкой и принимаю <a class="form-link" href="">Условия договора</a>
               </label>
               <button class="submit-form" type="submit">Отправить</button>
@@ -610,6 +622,20 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <div class="footer-form">
+          <b class="mail">Подпишитесь на рассылку</b>
+          <label class="user-mail" for="user-mail">
+            <input class="email" type="email" placeholder="E-mail" />
+
+            <button class="submit" type="submit">
+              Подписаться
+              <svg class="footer-form-icon" width="24" height="24">
+                <use href="./images/sprite.svg#telegram"></use>
+              </svg>
+            </button>
+          </label>
         </div>
       </div>
     </footer>
