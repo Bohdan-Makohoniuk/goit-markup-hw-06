@@ -352,13 +352,6 @@ button {
   justify-content: center;
 }
 
-.form-icon {
-  position: absolute;
-  left: 10px;
-  bottom: 20px;
-  fill: var(--title-text-calor);
-}
-
 .custom-checkbox {
   width: 16px;
   height: 15px;
@@ -389,18 +382,6 @@ button {
   transition: 250ms;
 }
 
-/* .custom-checkbox-icon {
-  width: 16px;
-  height: 15px;
-  border-radius: 2px;
-  outline: 2px solid var(--accent-color);
-  outline-offset: -2px;
-  background-color: var(--accent-color);
-  fill: var(--icon-last);
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
-
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -411,26 +392,42 @@ button {
   width: 450px;
   height: 40px;
   margin-bottom: 10px;
-  transform: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-icon {
+  position: absolute;
+  left: 12px;
+  bottom: 20px;
+  fill: var(--title-text-calor);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .user-form:hover,
 .user-form:focus {
-  border: 1px solid var(--accent-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-color: var(--accent-color);
 }
 
-.user-form:hover .form-icon,
-.user-form:focus .form-icon {
+.user-form:hover + .form-icon,
+.user-form:focus + .form-icon {
   fill: var(--accent-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-groop:focus-within > .user-form {
+  border: 1px solid var(--accent-color);
 }
 
 .form-message {
+  font-family: inherit;
   display: block;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
   width: 450px;
   height: 120px;
 
@@ -439,6 +436,8 @@ button {
 
   margin-bottom: 20px;
   padding: 12px 16px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-title {
@@ -450,6 +449,11 @@ button {
   text-align: left;
 
   margin-bottom: 4px;
+}
+
+.form-message:hover,
+.form-message:focus {
+  border-color: var(--accent-color);
 }
 
 .modal-title {
